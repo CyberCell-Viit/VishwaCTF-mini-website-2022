@@ -1,0 +1,92 @@
+* {box-sizing: border-box;}
+
+body{
+    background-color: rgb(46, 44, 44);
+   
+}
+
+.heading_faq{
+    color: white;
+    margin-bottom: 50px;
+    padding-left: 12px;
+    padding-top: 12px;
+}
+
+
+.accordian__section{
+    border-radius: 5px;
+    
+    margin-left: -10px;
+}
+
+
+
+.accordion {
+  background-color: transparent;
+  color:white;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  cursor: pointer;
+  padding: 25px;
+  margin: 0;
+  font-weight: 100;
+  font-size: large;
+  
+  
+}
+
+
+.active, .accordion:hover, .accordion:hover::after {
+  background-color: rgb(78, 76, 76);
+  color: white;
+}
+
+
+.accordion::after {
+  content: '\002B';
+  color: #777;
+  font-weight: bold;
+  float: right;
+  
+}
+
+
+.active::after {
+  content: "\2212";
+  color: white;
+}
+
+
+.accordion-panel {
+  padding: 0 18px;
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.2s ease-out;
+  background-color: transparent;
+  color: white;
+}
+
+.accordion-panel p {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+
+.top{
+    height: 80px;
+    
+}
+
+.row{
+    background-color: rgb(46, 44, 44);
+    padding: 50px;
+    height: 500px;
+}
+
+.container-fluid{
+    margin-left: -12px;
+    margin-right: -12px;
+    padding-right: 0;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
